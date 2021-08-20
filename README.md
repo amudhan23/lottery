@@ -20,11 +20,10 @@ Following are the few key features :
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+npm needs to be installed.
 * npm
   ```sh
   npm install npm@latest -g
@@ -32,12 +31,12 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+
+1. Clone the repo
    ```sh
    git clone https://github.com/amudhan23/lottery.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
@@ -46,7 +45,18 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. Running a test
+1. To compile
+   ```sh
+    truffle compile
+    ```
+2. To deploy in the local network
+    * Connect to ganache with the appropriate host and port details.
+    * Run the command :
+      ```sh
+       truffle deploy
+       ```
+
+2. Running test
 
    Few tests functions have been written for unit testing.
    To run
@@ -54,7 +64,7 @@ This is an example of how to list things you need to use the software and how to
    truffle test
    ```
 
-2. To deploy the contract
+3. To deploy in test network
    * Create a .env file and provide the following details :
      Install NPM packages
         ```sh
