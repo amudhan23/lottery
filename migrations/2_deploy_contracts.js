@@ -2,12 +2,12 @@ const lottery = artifacts.require("lottery");
 
 module.exports = async(deployer) => {
 
-  var price = 1;
+  var price = 10;
   var totalTickets = 5;
 
 
   //deploying nft
-  await deployer.deploy(lottery, totalTickets, price,{ value: "1000000000000000000" });
+  await deployer.deploy(lottery, totalTickets, price,{ value: "10" });
 
 
 };

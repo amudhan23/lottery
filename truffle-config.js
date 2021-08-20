@@ -24,6 +24,12 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+require('dotenv').config();
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const Web3 = require('web3')
+
+const mnemonic = process.env.Mnemonic
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -47,6 +53,19 @@ module.exports = {
      port: 8545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
+
+
+
+    rinkeby : {
+
+      // console.log(rinkeby_infuraKey)
+      provider: () => new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/" + process.env.InfuraKey),
+      network_id: "*",
+
+
+      // networkCheckTimeout: 10000,
+
+    }
 
     // Another network with more advanced options...
     // advanced: {
