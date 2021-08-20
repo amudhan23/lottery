@@ -66,7 +66,6 @@ npm needs to be installed.
 
 3. To deploy in test network
    * Create a .env file and provide the following details :
-     Install NPM packages
         ```sh
         Mnemonic=<"your mnemonic">    
         InfuraKey="your infura key"
