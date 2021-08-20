@@ -59,7 +59,7 @@ npm needs to be installed.
 2. Running test
 
    Few tests functions have been written for unit testing.
-   To run
+   To run:
    ```sh
    truffle test
    ```
@@ -74,3 +74,10 @@ npm needs to be installed.
        ```sh
        truffle deploy --reset --network rinkeby
        ```
+
+
+## Deployed contract
+
+    The contract has been already deployed in rinkeby testnet and verified
+
+    Address : 0x4334E1dAD14CC38043e5d17B7445fbbb654b19E4
