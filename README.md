@@ -68,7 +68,7 @@ Following are the few key features :
    * Create a .env file and provide the following details :
         ```sh
         Mnemonic=<"your mnemonic">    
-        InfuraKey="your infura key"
+        InfuraKey=<"your infura key">
         ```
    * To deploy in the rinkeby testnetwork execute the following command :
        ```sh
