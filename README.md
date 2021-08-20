@@ -23,8 +23,8 @@ Following are the few key features :
 
 ### Prerequisites
 
-npm needs to be installed.
-* npm
+
+* npm needs to be installed.
   ```sh
   npm install npm@latest -g
   ```
@@ -77,7 +77,5 @@ npm needs to be installed.
 
 
 ## Deployed contract
-
-    The contract has been already deployed in rinkeby testnet and verified
-
-    Address : 0x4334E1dAD14CC38043e5d17B7445fbbb654b19E4
+   The contract has been already deployed in rinkeby testnet and verified.
+   Address : 0x4334E1dAD14CC38043e5d17B7445fbbb654b19E4
