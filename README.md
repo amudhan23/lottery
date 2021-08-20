@@ -1,115 +1,67 @@
-Skip to content
-Why GitHub?
-Team
-Enterprise
-Explore
-Marketplace
-Pricing
-Search
-Sign in
-Sign up
-othneildrew
-/
-Best-README-Template
-Template
-3.6k8.7k
-Code
-Issues
-3
-Pull requests
-6
-Actions
-Projects
-Wiki
-Security
-Insights
-Best-README-Template/BLANK_README.md
-@luisitoguanes
-luisitoguanes Update reference variables (#39)
-…
-Latest commit 002a235 8 days ago
- History
- 5 contributors
-@othneildrew@GeovanniG@hivestrung@luisitoguanes@akarzim
-198 lines (139 sloc)  5.79 KB
 
-Contributors Forks Stargazers Issues MIT License LinkedIn
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+The project is about creating a lottery solidity code.
+Following are the few key features :
+* The owner of the contract is the deployer.
+* The first token goes to the owner.
+* Users can buy any number of tokens depending upon the availability.
+* Winner is decided upon calling a fn by the owner when all the tokens are sold.
+
+### Built With
+
+* Truffle
+* Infura
+* NPM
 
 
-Logo
 
-project_title
-project_description
-Explore the docs »
+<!-- GETTING STARTED -->
+## Getting Started
 
-View Demo · Report Bug · Request Feature
-
-Table of Contents
-About The Project
-Built With
-Getting Started
-Prerequisites
-Installation
-Usage
-Roadmap
-Contributing
-License
-Contact
-Acknowledgements
-About The Project
-![Product Name Screen Shot][product-screenshot]
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: github_username, repo_name, twitter_handle, email, project_title, project_description
-
-Built With
-Getting Started
 To get a local copy up and running follow these simple steps.
 
-Prerequisites
+### Prerequisites
+
 This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-npm
-npm install npm@latest -g
-Installation
-Clone the repo
-git clone https://github.com/github_username/repo_name.git
-Install NPM packages
-npm install
-Usage
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Installation
 
-For more examples, please refer to the Documentation
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/amudhan23/lottery.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-Roadmap
-See the open issues for a list of proposed features (and known issues).
 
-Contributing
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+<!-- USAGE EXAMPLES -->
+## Usage
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
-Distributed under the MIT License. See LICENSE for more information.
+1. Running a test
 
-Contact
-Your Name - @twitter_handle - email
+   Few tests functions have been written for unit testing.
+   To run
+   ```sh
+   truffle test
+   ```
 
-Project Link: https://github.com/github_username/repo_name
-
-Acknowledgements
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+2. To deploy the contract
+   * Create a .env file and provide the following details :
+     Install NPM packages
+        ```sh
+        Mnemonic=<"your mnemonic">    
+        InfuraKey="your infura key"
+        ```
+   * To deploy in the rinkeby testnetwork execute the following command :
+       ```sh
+       truffle deploy --reset --network rinkeby
+       ```
